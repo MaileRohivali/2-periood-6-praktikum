@@ -42,4 +42,9 @@
 	 	$carMessage = '<div class="form_message form-error">Auto ei kuulu valikusse</div>';
 	 
 	}
- ?>
+	if (isset($email) and preg_match("/@/", $email)) {
+		$emailMessage = '<div class="form_message form-notice">E-mail sobis</div>';
+	}  else{
+		$emailMessage = '<div class="form_message form-error">E-mail on vale</div>';
+	}
+?>

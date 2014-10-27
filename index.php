@@ -29,23 +29,27 @@
 		<div class="form_field">
 				<?php if ($isSubmitted){
 					echo $usernameMessage;}?>
-		<label for="username">Kasutajanimi:</label>
+			<label for="username">Kasutajanimi:</label>
 			<input id="username" type="text" name="username">
 		</div>
 		<div class="form_field">
 				<?php if ($isSubmitted){
 					echo $ageMessage;}?>
-		<label for="age">Vanus:</label>
+			<label for="age">Vanus:</label>
 			<input id="age" type="number" name="age">
 		</div>
 		<div class="form_field">
 				<?php if ($isSubmitted){
 					echo $carMessage;}?>
-				<label for="name">	Auto: </label>
+			<label for="name">	Auto: </label>
 			<input id="car" type="text" name="car">
 		</div>
+		<div class="form_field">
+				<?php if ($isSubmitted){
+					echo $emailMessage;}?>
+			<label for="email">	E-mail: </label>
+			<input id="email" type="text" name="email">
 		</div>
-
 		<div class="form_field">
 			<input type="submit" name="submit" value="Saada">
 		</div>
